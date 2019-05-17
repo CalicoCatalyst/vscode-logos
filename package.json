@@ -1,0 +1,25 @@
+{
+    "name": "logos",
+    "displayName": "Logos",
+    "description": "Logos support for VSCode",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "logos",
+            "aliases": ["Logos", "logos"],
+            "extensions": [".xm",".x",".xi",".xmi"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "logos",
+            "scopeName": "source.logos",
+            "path": "./syntaxes/logos.tmLanguage"
+        }]
+    }
+}
